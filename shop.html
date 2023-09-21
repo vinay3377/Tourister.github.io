@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-1.css">
+    <title>Shop</title>
+
+    <!-- font family script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+SA+Beginner:wght@400;500;700&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
+
+
+    <!-- slider scripts -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+
+        <style>
+            .packing {
+	text-align: center;
+	background-color: white;
+	color: black;
+	padding: 1px 60px;
+}
+        </style>
+</head>
+<body>
+    <div class="head">
+        <div class="nav" id="nav">
+            <h2>Adventor</h2>
+            <ul id="hammerShow">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="shop"><a href="shop.html">Shop</a>
+                    <ul class="drop">
+                        <li><a href="">Shop Single</a></li>
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Wishlist</a></li>
+                        <li><a href="">Checkout</a></li>
+                        <li><a href="">My Account</a></li>
+                    </ul>
+                </li>
+                <li class="Advanture"><a href="adventure.html">Adventures</a>
+                    <div class="adv">
+                        <table>
+                            <tr>
+                                <th>Cooking Utensils</th>
+                                <th>Bags & Backpacks</th>
+                                <th>Camping Tools</th>
+                                <th>Trekking Equipment's</th>
+                            </tr>
+                            <tr>
+                                <td>Camp Cook Set</td>
+                                <td>Camping Bag</td>
+                                <td>LED Head Torch</td>
+                                <td>LED Torch</td>
+                            </tr>
+                            <tr>
+                                <td>Camping Stove</td>
+                                <td>Camping Shoe</td>
+                                <td>Trekking Hat</td>
+                                <td>Trekking Helmet</td>
+                            </tr>
+                            <tr>
+                                <td>Clip Hook</td>
+                                <td>Binocular</td>
+                                <td>Trekking Jacket</td>
+                                <td>Camping Compass</td>
+                            </tr>
+                            <tr>
+                                <td>Binocular</td>
+                                <td>Rucksack</td>
+                                <td>Sleeping Bag</td>
+                                <td>Camping Knief</td>
+                            </tr>
+                        </table>
+                    </div>
+                </li>
+                <li class="shop"><a href="blog.html">Blog</a>
+                    <ul class="drop">
+                        <li><a href="">Blog Listing</a></li>
+                        <li><a href="">Blog Single</a></li>
+                        <li><a href="">Activities</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href=""><ion-icon name="cart-outline"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="heart-outline"></ion-icon></a></li>
+            </ul>
+                <div >
+                    <ion-icon name="heart-outline" onclick="toggle()" id="hammer"></ion-icon>
+                </div>
+    
+        </div>
+        <div class="second">
+            
+            <div class="item">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <h1>Shop</h1>
+            </div>
+            <div class="item" id="para">
+                <p>Lorem ipsum dolor sit amet elit. Dolorem, consequatur?</p>
+            </div>
+            <div class="item">
+                <button>View Advanture</button>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="packing" id="packing">
+        
+        <div class="bag">
+            <div class="pack">
+                <img src="images/hat.jpg" alt="">
+                <p>Backpacks Accessories</p>
+                <h2>Trakking Hat</h2>
+                <h2>$12</h2>
+            </div>
+            <div class="pack">
+                <img src="images/jacket.jpg" alt="">
+                <p>Backpacks Accessories</p>
+                <h2>Trakking Jacket</h2>
+                <h2>$22</h2>
+            </div>
+            <div class="pack">
+                <img src="images/shoes.jpg" alt="">
+                <p>Shoes & Accessories</p>
+                <h2>Trakking Shoes</h2>
+                <h2>$32</h2>
+            </div>
+            <div class="pack">
+                <img src="images/bag.jpg" alt="">
+                <p>Backpacks Accessories</p>
+                <h2>Trakking Bag</h2>
+                <h2>$42</h2>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="packing" id="packing">
+        
+        <div class="bag">
+            <div class="pack">
+                <img src="images/hammer.webp" alt="">
+                <p>Backpacks Accessories</p>
+                <h2>Trakking Hat</h2>
+                <h2>$12</h2>
+            </div>
+            <div class="pack">
+                <img src="images/goggles.avif" alt="">
+                <p>Backpacks Accessories</p>
+                <h2>Trakking Jacket</h2>
+                <h2>$22</h2>
+            </div>
+            <div class="pack">
+                <img src="images/shoes.jpg" alt="">
+                <p>Shoes & Accessories</p>
+                <h2>Trakking Shoes</h2>
+                <h2>$32</h2>
+            </div>
+            <div class="pack">
+                <img src="images/bag.jpg" alt="">
+                <p>Backpacks Accessories</p>
+                <h2>Trakking Bag</h2>
+                <h2>$42</h2>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="packing" id="packing">
+        
+        <div class="bag">
+            <div class="pack">
+                <img src="images/hat.jpg" alt="">
+                <p>Backpacks Accessories</p>
+                <h2>Trakking Hat</h2>
+                <h2>$12</h2>
+            </div>
+            <div class="pack">
+                <img src="images/jacket.jpg" alt="">
+                <p>Backpacks Accessories</p>
+                <h2>Trakking Jacket</h2>
+                <h2>$22</h2>
+            </div>
+            <div class="pack">
+                <img src="images/shoes.jpg" alt="">
+                <p>Shoes & Accessories</p>
+                <h2>Trakking Shoes</h2>
+                <h2>$32</h2>
+            </div>
+            <div class="pack">
+                <img src="images/bag.jpg" alt="">
+                <p>Backpacks Accessories</p>
+                <h2>Trakking Bag</h2>
+                <h2>$42</h2>
+            </div>
+        </div>
+        <button>
+            Browse Accessories
+        </button>
+    </div>
+    
+
+    
+
+    
+
+    <div class="footer">
+        <div class="mountains">
+            <img src="images/last-1.png" alt="">
+            <img src="images/last-2.png" alt="">
+            <img src="images/last-3.png" alt="">
+            <img src="images/last-4.png" alt="">
+        </div>
+
+        <div class="subscribe">
+            <h2>Subscribe now</h2>
+            <h1>Get The Latest News</h1>
+            <form action="">
+                <input type="text" placeholder="Enter Email" >
+            </form>
+        </div>
+
+        <div class="fot-last">
+            <div class="adv-one">
+                <h2>
+                    Adventor
+                    </h2>
+                    <p>Going on an adventure is not about just fun, its all about yourself and entertaining yourself. Get the best out adventure activities in you and start living the moment. </p>
+            </div>
+            <div class="useful">
+                <h2>
+                    Useful Links
+                    </h2>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Adventures</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+            </div>
+            <div class="support">
+                <h2>Support Links</h2>
+                <ul>
+                    <li><a href="">Ask a Question</a></li>
+                    <li><a href="">Delivery Terms</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="reach-us">
+                <h2>Reach Us</h2>
+
+                <p><ion-icon name="location"></ion-icon>932 Galvin St. Pompano Beach, FL 33060</p>
+                <p><ion-icon name="mail-open"></ion-icon>Example@example.com</p>
+                <p><ion-icon name="call"></ion-icon>+999 000 888 0</p>
+            </div>
+            <div class="logo">
+                <a href=""><ion-icon name="logo-twitter"></ion-icon> </a>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon> </a>
+                <a href=""><ion-icon name="logo-linkedin"></ion-icon> </a>
+                <a href=""><ion-icon name="logo-facebook"></ion-icon> </a>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; by Vikram Pandia</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- icon script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- slider script -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+    <script>
+
+        function toggle(){
+            let hammerShow = document.getElementById('hammerShow');
+            let hammer = document.getElementById('hammer');
+
+            if(hammerShow.style.visibility != 'hidden'){
+                hammerShow.style.visibility = 'hidden';
+            }else{
+                hammerShow.style.visibility = 'visible';
+            }
+
+        }
+
+
+        $(document).ready(function () {
+            $('.slider ul').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+            });
+        });
+
+
+        $(document).ready(function () {
+            $('.slider-2 ul').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+            });
+        });
+    </script>
+</body>
+</html>
