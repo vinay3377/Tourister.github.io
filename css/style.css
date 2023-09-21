@@ -1,0 +1,896 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    /* color: white; */
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Montserrat', sans-serif;
+/* background-image: url('https://images.pexels.com/photos/3783385/pexels-photo-3783385.jpeg'); */
+/* height: 3000px; */
+ /* background-repeat:no-repeat ; */
+ position: relative;
+}
+body ::before{
+
+}
+
+#hammerShow {
+	margin-top: 28px;
+	margin-right: 7px;
+    /* visibility: hidden; */
+}
+#hammer {
+	float: right;
+	margin-right: -35px;
+    visibility: hidden;
+	
+}
+.head{
+    background-image: url('../images/slider-1.jpg') ;
+    height: 1000px;
+    opacity: 1;
+    z-index: -1;
+    color: white;
+}
+#nav {
+	width: 92%;
+	margin: auto;
+    padding: 40px 0px;
+}
+.nav h2{
+    float: left;
+    font-size: 30px;
+}
+.nav ul{
+    display: flex;
+    float: right;
+    /* flex-direction: column; */
+}
+
+.nav li{
+    list-style: none;
+    margin-right: 40px;
+    font-size: 20px;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+.nav li a:hover{
+    color: rgb(247, 129, 87);
+    text-decoration: underline;
+    
+}
+ion-icon{
+    font-size: 30px;
+}
+.second {
+	
+	display: inline-block;
+	margin-top: 150px;
+    text-align: center;
+    margin-left: 250px;
+}
+.item{
+    font-size: 50px;
+}
+button {
+	height: 60px;
+	width: 170px;
+	font-size: 16px;
+	cursor: pointer;
+	border: 1px;
+}
+button:hover{
+    background-color: rgb(247, 129, 87);
+}
+#para{
+    font-size: 18px;
+    margin: 25px 0px;
+}
+.shop{
+    position: relative;
+}
+.drop{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    padding: 10px 15px;
+    visibility: hidden;
+    top: 30px;
+
+background:white;
+
+}
+.shop:hover .drop{
+    visibility: visible;
+}
+.drop li a{
+    
+    color: black ;
+    
+}
+.drop li{
+    margin-top: 15px;
+    
+}
+.Advanture{
+    position: relative;   
+}
+.adv {
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	padding: 10px 15px;
+	visibility: hidden;
+	top: 36px;
+	right: -100px;
+	background: white;
+	width: 940px;
+	/* left: 0px; */
+}
+.Advanture:hover .adv{
+    visibility: visible;
+}
+table{
+    color: black;
+    font-size: 17px;
+}
+table th , td{
+    padding: 10px;
+}
+.container{
+    text-align: center;
+	align-items: center;
+	padding: 50px;
+    background-image: url('../images/back-1.jpg');
+    
+    
+}
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 9px;
+	text-align: center;
+	align-items: center;
+	margin-top: 50px 0px;
+	padding: 50px;
+}
+#container span {
+	font-size: 28px;
+	font-weight: 600;
+	color: brown;
+	margin: 30px 0px;
+}
+#container h1{
+    font-size: 50px;
+    margin: 15px 0px;
+    color: black;
+}
+.photo img {
+	width: 250px;
+	border-radius: 100px;
+    border: 2px solid saddlebrown;
+}
+.photo h2{
+    margin: 25px 0px;
+    color: rgb(12, 12, 12);
+}
+.photo p{
+    margin: 25px 0px;
+    color: rgb(15, 15, 15);
+}
+.photo:hover h2{
+    color: rgb(247, 129, 87);
+}
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+background-image: url('../images/back-1.jpg');
+
+}
+.para{
+    background-color: white;
+    color: black;
+    padding: 70px;
+    height: 450px;
+    margin-left: 60px;
+    background-color: aliceblue;
+}
+
+.para h1{
+    margin: 25px 0px;
+}
+.img {
+	height: 450px;
+	margin-top: 60px;
+	
+	
+}
+.img img{
+    width: 500px;
+    height: 450px;
+    z-index: 999;
+}
+.para:hover{
+    color: brown;
+}
+
+.packing{
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 50px;
+}
+.bag{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    padding: 20px;
+}
+.pack p{
+    margin: 10px 0px;
+}
+.pack h2{
+    margin-bottom: 10px;
+}
+.packing em {
+	color: chocolate;
+	margin: 20px 0px;
+}
+.pack img {
+	width: 250px;
+	height: 280px;
+	object-fit: cover;
+	mix-blend-mode: darken;
+}
+.packing h1 {
+	margin: 20px 0px;
+}
+.pack:hover{
+    border:1px solid chocolate;
+}
+.pack {
+	border: 1px solid rgb(68, 66, 66);
+}
+.packing button{
+    margin: 20px 0px;
+    width: 250px;
+}
+.activity{
+    text-align: center;
+    background-image: url(../images/back-slider.jpg);
+}
+.activity em {
+	color: cadetblue;
+	
+}
+.activity h1{
+    margin: 20px 0px;
+}
+.slider{
+    padding: 50px;
+}
+#slider img {
+	width: 380px;
+	height: 350px;
+    position: relative;
+}
+
+.slider ul{
+    display: flex;
+    justify-content: space-between;
+}
+.travel h2{
+    margin: 25px 0px;
+}
+.travel h2:hover{
+    color: orangered;
+}
+.travel span{
+    color: brown;
+    font-size: 20px;
+}
+.travel:hover{  
+    cursor: pointer;
+}
+.hide {
+	visibility: hidden;
+	position: absolute;
+	top: 350px;
+    font-weight: 900px;
+    font-size: 20px;
+    color:white;
+	
+}
+.travel:hover .hide{
+    visibility: visible;
+    top: 310px;
+}
+.con{    
+    background-image: url('../images/back-6.jpg');
+    height: 750px;
+}
+.bsn-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 40px;
+}
+.bsn {
+	width: 300px;
+    margin: 31px 0px;
+}
+.bsn-1 {
+	text-align: center;
+	/* margin: 20px 0px; */
+	
+}
+.bsn-1 h1{
+    color: cadetblue;
+}
+#business {
+	padding: 35px;
+}
+.bsn h2 {
+	margin-bottom: 15px;
+	font-size: 28px;
+}
+.bsn:hover  h2{
+    color:orangered ;
+}
+
+.back-6{
+    background-image: url('../images/back-4.png');
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    padding-top: 80px;
+}
+.part-2{
+    padding: 30px;
+    margin-top: 30px;
+}
+.part-1{
+    padding: 30px;
+    margin-top: 84px;
+}
+.part-1 h1{
+    margin-top: 10px;
+}
+.part-1 p{
+    margin-top: 93px;
+}
+.part-2 ul{
+    display: flex;
+}
+
+.part-2 p{
+    margin-top: 10px;
+}
+.part-2 li{
+    height: 200px;
+    width: 200px;
+    
+    background-color:rgb(56, 55, 55);
+    border-radius: 50%;
+    list-style: none;
+    margin: 0px 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+.part-2 li:hover{
+    background-color: brown;
+}
+.margin {
+	
+	margin-top: 74px;
+}
+.red{
+    background-color: red;
+}
+.slider-2{
+    width: 75%;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+.slider-2 ul{
+    display: flex;
+}
+.slider-2 img {
+	width: 150px;
+    border-radius: 50px;
+    margin: auto;
+}
+.slider-2 p {
+	margin: 10px 0px;
+}
+.slider-2 h2 {
+	margin-top: 20px;
+    margin-bottom: 10px;
+}
+.img-ventura{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+    padding: 10px 50px;
+}
+.img-ventura img {
+	width: 250px;
+	height: 330px;
+    filter: grayscale(100%);
+    
+}
+.img-ventura img:hover{
+    transform: scale(0.95);
+    transition: linear;
+    filter: none;
+}
+.ventura h1 {
+	margin-left: 10px;
+	padding: 10px;
+}
+.ventura{
+    padding-bottom: 50px;
+}
+.footer{
+    background-image: url('../images/back-last.jpg');
+    
+}
+.mountains {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/* grid-gap: 31px; */
+	width: 90%;
+	margin: auto;
+    padding-top: 40px;
+}
+.subscribe {
+	margin-top: 60px;
+	/* width: 60%; */
+	/* margin: auto; */
+	text-align: center;
+	padding-top: 60px;
+}
+.subscribe h1 {
+	margin: 20px;
+    font-size: 45px;
+}
+input {
+	width: 50%;
+    
+	height: 70px;
+	margin-top: 35px;
+}
+input[placeholder]{
+    font-size: 18px;
+    padding: 10px;
+}
+.fot-last {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	color: white;
+	/* grid-gap: 5px; */
+	padding: 50px;
+	margin-top: 50px;
+}
+li{
+    list-style: none;
+}
+.fot-last a{
+    color: white;
+    text-decoration: none;
+}
+.useful {
+	padding: 0px 30px;
+}
+.fot-last h2 {
+	margin: 20px 0px;
+}
+.useful li {
+	margin: 10px 0px;
+}
+.support li{
+    margin: 10px 0px;
+}
+.reach-us p {
+	margin: 10px 0px;
+}
+.logo {
+	margin-top: 25px;
+	
+}
+.logo a{
+    margin: 0px 10px;
+}
+.fot-last a:hover{
+    color: orangered;
+}
+.subscribe h2 {
+	font-size: 35px;
+	color: chocolate;
+}
+.copy{
+    color: white;
+    text-align: center;
+}
+
+
+
+@media(max-width:1100px){
+    .adv {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        /* padding: 10px 15px; */
+        visibility: hidden;
+        top: 36px;
+        right: -100px;
+        background: white;
+        width: 727px;
+        /* left: 0px; */
+    }
+    table th, td {
+        padding: 4px;
+    }
+    .second {
+        margin-left: 150px;
+    }
+    .head {
+        height: 900px;
+    }
+    .container {
+        padding: 0px;
+    }
+    .grid {
+        padding: 10px;
+    }
+    .packing {
+        padding: 0px;
+    }
+    .grid-2 {
+        padding: 30px;
+    }
+    .slider {
+        padding: 0px;
+    }
+    .bsn-2 {
+        margin-right: 0px;
+    }
+    .bsn {
+        /* width: 300px; */
+        margin: 31px 0px;
+    }
+}
+@media(max-width:1050px){
+    .Advanture:hover .adv {
+        visibility: hidden;
+    }
+    .bag {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 6px;
+        padding: 5px;
+    }
+    .img-ventura {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-gap: 2px; 
+         padding: 0px 0px; 
+    }
+}
+@media(max-width:1000px){
+    .Advanture:hover .adv {
+        visibility: hidden;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0px;
+        
+    }
+    button {
+        
+        margin: 10px;
+    }
+    .bag {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 6px;
+        padding: 5px;
+    }
+    .back-6 {
+        background-image: url('../images/back-4.png');
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+        padding-top: 0px;
+    }
+    .part-1 {
+        padding: 0px 10px;
+        margin-top: 44px;
+    }
+    .part-1 p {
+        margin-top: 35px;
+    }
+    .img-ventura {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2px;
+        padding: 0px 0px;
+    }
+    .img-ventura img {
+        width: 400px;
+        height: 401px;
+        filter: grayscale(100%);
+    }
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 50px;
+        background-image: url('../images/back-1.jpg');
+    }
+    .para {
+        background-color: white;
+        color: black;
+        padding: 37px;
+        height: auto;
+        margin-left: 0px;
+        background-color: aliceblue;
+        text-align: center;
+        
+        width: 90%;
+        margin: auto;
+    }
+    .img {
+        height: 450px;
+        margin-top: 60px;
+        width: 90%;
+        margin: auto;
+    }
+    .part-1 {
+        padding: 0px 64px;
+        margin-top: 44px;
+    }
+    .Advanture:hover .adv {
+        visibility: hidden;
+    }
+}
+@media(max-width:920px){
+    .mountains {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-gap: 31px; */
+        width: 90%;
+        margin: auto;
+        padding-top: 40px;
+    }
+    .Advanture:hover .adv {
+        visibility: hidden;
+    }
+}
+@media(max-width:900px){
+    .bag {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 6px;
+        padding: 0px;
+    }
+    .second {
+        margin-left: 55px;
+    }
+    .fot-last {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        grid-gap: 0px;
+        padding: 50px;
+        margin-top: 50px;
+    }
+    .Advanture:hover .adv {
+        visibility: hidden;
+    }
+}
+@media(max-width:860px){
+    .nav li {
+        list-style: none;
+        margin-right: 25px;
+        font-size: 20px;
+    }
+    .Advanture:hover .adv {
+        visibility: hidden;
+    }
+}
+@media(max-width:750px){
+    .img-ventura img {
+        width: 340px;
+        height: 401px;
+        filter: grayscale(100%);
+    }
+    .Advanture:hover .adv {
+        visibility: hidden;
+    }
+    .shop:hover .drop {
+        visibility: hidden;
+    }
+}
+@media(max-width:700px){
+    #nav {
+        width: 92%;
+        margin: auto;
+        padding: 13px 0px;
+    }
+    .nav h2 {
+        float: left;
+        font-size: 25px;
+    }
+    .nav li {
+        list-style: none;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    .Advanture:hover .adv {
+        visibility: hidden;
+    }
+    .shop:hover .drop {
+        visibility: hidden;
+    }
+
+}
+@media(max-width:650px){
+    .nav ul{
+        display: flex;
+        float: right;
+        flex-direction: column;
+    }
+    #hammer {
+        float: right;
+        margin-right: -35px;
+        visibility: visible;
+        
+    }
+    #hammerShow {
+        margin-top: 28px;
+        margin-right: 7px;
+        visibility: hidden;
+ 
+  }
+  .item ul {
+	display: flex;
+	justify-content: center;
+	visibility: hidden;
+    }
+    
+    .item {
+        font-size: 31px;
+    }
+    .head {
+        height: 620px;
+    }
+    .second {
+        display: inline-block;
+        margin-top: 9px;
+        text-align: center;
+        margin-left: 40px;
+    }
+    .bsn {
+        width: 280px;
+        margin: 31px 0px;
+    }
+    .bsn {
+        /* width: 300px; */
+        margin: 16px 0px;
+    }
+    .part-2 {
+        /* padding: 30px; */
+        margin-top: 30px;
+    }
+    .part-2 li {
+        height: 190px;
+        width: 185px;
+        background-color: rgb(56, 55, 55);
+        border-radius: 50%;
+        list-style: none;
+        margin: 0px 5px;
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+    }
+    .img-ventura img {
+        width: 302px;
+        height: 361px;
+        filter: grayscale(100%);
+    }
+    .Advanture:hover .adv {
+        visibility: hidden;
+    }
+    .shop:hover .drop {
+        visibility: hidden;
+    }
+}
+@media(max-width:600px){
+    .bsn-2 {
+        margin-right: -35px;
+    }
+    .part-2 ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Advanture:hover .adv {
+        visibility: hidden;
+    }
+    .shop:hover .drop {
+        visibility: hidden;
+    }
+    
+}
+@media(max-width:590px){
+    .item {
+        font-size: 20px;
+    }
+    .bsn h2 {
+        margin-bottom: 6px;
+        font-size: 16px;
+    }
+    .bsn {
+        /* width: 300px; */
+        margin: 11px 0px;
+    }.bsn {
+        width: auto;
+        margin: 11px 0px;
+    }
+    .con {
+        background-image: url('../images/back-6.jpg');
+        height: 583px;
+    }
+    .img-ventura {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2px;
+        padding: 0px 0px;
+    }
+    .img-ventura img {
+        width: 302px;
+        height: 361px;
+        filter: grayscale(100%);
+        margin: auto;
+    }
+    .Advanture:hover .adv {
+        visibility: hidden;
+    }
+    .shop:hover .drop {
+        visibility: hidden;
+    }
+}
+@media(max-width:520px){
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px;
+        background-image: url('../images/back-1.jpg');
+    }
+    .bag {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 6px;
+        padding: 0px;
+    }
+    .Advanture:hover .adv {
+        visibility: hidden;
+    }
+    .shop:hover .drop {
+        visibility: hidden;
+    }
+}

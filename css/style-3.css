@@ -1,0 +1,252 @@
+.making{
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+.making-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding: 30px;
+}
+ .making p {
+	margin: 40px 9px;
+}
+.making img {
+	width: 570px;
+}
+.adv-max {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
+	padding: 50px 20px;
+	background-color: rgb(135, 189, 236);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.adv-min {
+	border-right: 2px solid white;
+	margin-left: 26px;
+}
+.adv-min a:hover{
+    color: rgb(228, 74, 18);
+}
+.adv-1 h2{
+    margin: 20px 0px;
+}
+.adv-1 li {
+	margin: 15px;
+    list-style-type: style;
+}
+.making h2 {
+	color: brown;
+}
+.adv-bg{
+    background-color: rgb(243, 197, 137);
+    height: 600px;
+    text-align: center;
+}
+.adv-bg-1 {
+	transform: translateY(100%);
+}
+.adv-bg-1 h2,p,h1 {
+	margin: 20px 0px;
+}
+.question{
+    width: 85%;
+    margin: auto;
+    
+}
+.qust{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.any h1{
+    margin: 16px 0px;
+}
+.question > h1,h2{
+    text-align: center;
+}
+
+
+@media(max-width:1310px){
+    .making {
+        width: auto;
+        margin: auto;
+        padding: 0px;
+    }
+}
+@media(max-width:1210px){
+    .making img {
+        width: 520px;
+    }
+    .adv-max {
+        
+        padding: 25px 34px;
+        
+    }
+    .adv-bg {
+        background-color: rgb(243, 197, 137);
+        height: 519px;
+        text-align: center;
+    }
+    .adv-bg-1 {
+        transform: translateY(70%);
+    }
+}
+@media(max-width:1150px){
+    .adv-max {
+        padding: 0px 20px;
+        font-size: 12px;
+    }
+}
+@media(max-width:1110px){
+    .making p {
+        margin: 20px 9px;
+    }
+    .making img {
+        width: 490px;
+    }
+    .adv-bg {
+        background-color: rgb(243, 197, 137);
+        height: 460px;
+        text-align: center;
+    }
+    .question {
+        width: 95%;
+        margin: auto;
+    }
+}
+@media(max-width:1050px){
+    .making-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0px;
+        padding: 20px;
+    }
+    .adv-bg {
+        background-color: rgb(243, 197, 137);
+        height: 437px;
+        text-align: center;
+    }
+}
+@media(max-width:1005px){
+    .making img {
+        width: 460px;
+    }
+    .any h1 {
+        margin: 7px 0px;
+        font-size: 21px;
+    }
+}
+@media(max-width:970px){
+    .making-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0px;
+        padding: 10px;
+    }
+}
+@media(max-width:940px){
+    .making-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+        padding: 10px;
+    }
+    .making {
+        width: 85%;
+        margin: auto;
+        padding: 0px;
+    }
+    .making img {
+        width: 725px;
+    }
+    .adv-1 li {
+        margin: 15px;
+        list-style-type: none;
+        text-align: center;
+    }
+}
+@media(max-width:800px){
+    .making img {
+        width: 650px;
+    }
+}
+@media(max-width:720px){
+    .making img {
+        width: 600px;
+    }
+    .adv-min {
+        border-right: 2px solid white;
+        margin-left: 5px;
+    }
+    .adv-max {
+        padding: 0px 3px;
+        font-size: 10px;
+    }
+}
+@media(max-width:670px){
+    .making {
+        width: 98%;
+        margin: auto;
+        padding: 0px;
+    }
+    .adv-bg {
+        background-color: rgb(243, 197, 137);
+        height: 396px;
+        text-align: center;
+    }
+    .adv-bg-1 {
+        transform: translateY(37%);
+    }
+}
+@media(max-width:630px){
+    .making img {
+        width: 540px;
+    }
+    .adv-1 li {
+        margin: 10px;
+        list-style-type: none;
+        text-align: center;
+    }
+    .making p {
+        margin: 0px 5px;
+    }
+}
+@media(max-width:565px){
+    .making img {
+        width: 500px;
+    }
+    .adv-bg {
+        background-color: rgb(243, 197, 137);
+        height: 323px;
+        text-align: center;
+    }
+}
+@media(max-width:520px){
+    .making img {
+        width: 470px;
+    }
+    .adv-bg-1 h2, p, h1 {
+        margin: 16px 0px;
+        font-size: 22px;
+    }
+    .adv-max {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        background-color: rgb(135, 189, 236);
+    }
+    .qust {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:480px){
+    .making img {
+        width: 450px;
+    }
+}
