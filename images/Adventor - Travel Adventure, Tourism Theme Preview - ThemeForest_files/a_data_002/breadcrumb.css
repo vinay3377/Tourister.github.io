@@ -1,0 +1,230 @@
+
+
+/*--------------------------------------------------------------
+    Title & Breadcrumb
+--------------------------------------------------------------*/
+
+    .main-title-section-wrapper {
+        clear: both;
+        float: left;
+        margin: 0;
+        padding: 300px 0 400px;
+        width: 100%;
+    }
+
+    #header-wrapper .main-title-section-wrapper {
+        position: relative;
+    }
+
+    #header-wrapper.header-top-absolute .main-title-section-wrapper {
+        position: static;
+    }
+
+    .main-title-section-wrapper:before {
+        content:"";
+        mask-image: url(../images/breadcrumb-mask.png);
+        -webkit-mask-image: url(../images/breadcrumb-mask.png);
+        mask-position: center top;
+        -webkit-mask-position: center top;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-size: cover;
+        -webkit-mask-size: cover;
+        background-color: var(--DTBodyBGColor);
+        width: 100%;
+        height: 160px;
+        bottom: -1px;
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        right: 0;        
+    }
+
+    .main-title-section-wrapper:after {
+        content:"";
+        background-image: url(../images/pine-forest.png);        
+        background-position: center center;       
+        background-repeat: no-repeat;        
+        background-size: 100%;        
+        width: 1920px;
+        height: 248px;
+        bottom: 0;        
+        position: absolute;
+        left: 0;
+        right: 0;
+    }    
+
+    .main-title-section {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        pointer-events: none;
+    }
+
+    .main-title-section h1 {
+        font-size: calc(var(--DTFontSize_H1)/1);
+        text-transform: capitalize;
+        margin: 0 0 20px;
+        word-break: break-all;
+    }
+
+    .breadcrumb {
+        clear: both;
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: inherit;
+        font-weight: 500;
+    }
+
+    .breadcrumb a, .breadcrumb span { font-size: var(--DTFontSize_H6); font-weight: var(--DTFontWeight_Base); }
+
+    .breadcrumb span:not(.current) {
+        display: inline-block;
+        margin: 0px 15px;
+        padding: 0;
+    }
+
+    .main-title-section-wrapper .breadcrumb-default-delimiter:before  {
+        content: "";
+        background-color: transparent;
+        display: inline-block;
+        height: 0;
+        opacity: 1;
+        position: relative;
+        top: 0;
+        vertical-align: middle;
+        width: 0;
+        border-right: 0px solid transparent;
+        border-top-width: 10px;
+        border-top-style: solid;
+        border-left: 10px solid transparent;
+    }
+
+    .main-title-section h1,
+    .breadcrumb {
+        hyphens: auto;
+        word-break: break-word;
+        word-wrap: break-word;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+    }
+
+    .main-title-section-wrapper>.main-title-section-bg,
+    .main-title-section-wrapper>.main-title-section-bg:after {
+        content: "";
+        height: 100% !important;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        pointer-events: none;
+        mix-blend-mode: multiply;
+    }
+
+/*--------------------------------------------------------------
+    Default Colors
+--------------------------------------------------------------*/
+
+    .breadcrumb { color: var(--DTBodyTxtColor); }
+
+    .main-title-section h1 { color: var(--DTHeadAltColor); }
+
+    .breadcrumb a { color: var(--DTLinkColor); }
+
+    .breadcrumb span.current  { color: var(--DTBodyTxtColor); }
+
+    .main-title-section-wrapper>.main-title-section-bg:after { background-color: rgba(var(--DTBlack_RGB), 0.3); }
+
+    
+    .main-title-section-wrapper.dark-bg-breadcrumb>.main-title-section-bg { background-color: var(--DTBlackColor); }
+    
+
+    .dark-bg-breadcrumb .main-title-section h1, .dark-bg-breadcrumb .breadcrumb a, 
+    .dark-bg-breadcrumb .breadcrumb span.current, .dark-bg-breadcrumb .breadcrumb span:not(.current) { color: var(--DTWhiteColor); }
+    
+
+    .breadcrumb a:hover, .dark-bg-breadcrumb .breadcrumb a:hover { color: var(--DTLinkHoverColor); }
+
+
+
+/*--------------------------------------------------------------
+    Accents
+--------------------------------------------------------------*/
+
+    /* Primary Color */
+    .breadcrumb a:hover { color: var(--DTPrimaryColor); }    
+
+
+/*--------------------------------------------------------------
+	Responsive
+--------------------------------------------------------------*/
+
+    @media only screen and (min-width:1441px) {
+
+        .main-title-section-wrapper { padding: 300px 0 400px; }
+    }
+    
+    @media only screen and (min-width:1281px) {
+
+        .main-title-section-wrapper { padding: 200px 0 300px; }
+    }
+
+    @media only screen and (min-width:1025px) and (max-width:1280px) {
+
+        .main-title-section-wrapper { padding: 150px 0 300px; }
+        
+        .main-title-section-wrapper .main-title-section h1 { font-size: 80px; }
+    }
+    
+    @media only screen and (min-width:768px) and (max-width:1024px) {
+
+        .main-title-section-wrapper { padding: 150px 0 300px; }
+        
+        .main-title-section-wrapper .main-title-section h1 { font-size: 60px; }
+
+        .main-title-section-wrapper:before { height: 100px; }
+    }
+
+    /*----*****---- << Mobile (Landscape) >> ----*****----*/
+
+    /* Common Styles for the devices below 767px width */
+
+    @media only screen and (max-width: 767px) {    
+
+        .main-title-section h1 {
+            font-size: 28px;
+        }
+
+        .main-title-section,
+        .main-title-section h1,
+        .breadcrumb {
+            text-align: center;
+        }
+
+        .main-title-section-wrapper { padding: 200px 0 250px; }
+        
+        .main-title-section-wrapper .main-title-section h1 { font-size: 60px; }
+
+        .main-title-section-wrapper:before { height: 100px; }
+
+    }
+
+    /* Common Styles for the devices below 479px width */
+
+    @media only screen and (max-width: 479px) {    
+
+        .main-title-section-wrapper .main-title-section h1 { font-size: 45px; }
+
+        .breadcrumb a, .breadcrumb span { font-size: 18px; }
+
+        .main-title-section-wrapper .breadcrumb-default-delimiter:before { border-right: 0px solid transparent; border-top-width: 10px; border-top-style: solid;
+        border-left: 10px solid transparent; }
+
+    }
