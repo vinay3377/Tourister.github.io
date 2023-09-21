@@ -1,0 +1,187 @@
+   
+/* Variables */
+
+:root {
+
+    /* Color Variables */
+    --DTPrimary_RGB: 242, 151, 39; 
+    --DTSecondary_RGB: 16,34,27; 
+    --DTTertiary_RGB: 29, 197, 206; 
+    --DTBodyBG_RGB: 255, 255, 255; 
+    --DTBodyTxt_RGB: 74, 51, 51; 
+    --DTLink_RGB: 16, 34, 27; 
+    --DTLinkHover_RGB: 242, 151, 39;
+
+    --DTPrimary_RGB-less-opacity: rgba(242, 151, 39, 0.05);
+    --DTPrimary_RGB-low-eight-opacity: rgba(242, 151, 39, 0.8);
+
+    --DTBorder_RGB: 216, 216, 216;
+    --DTBlack_RGB: 0, 0, 0;
+    --DTBlack_RGB-low-opacity: rgba(0,0,0,0.1);
+    --DTBlack_RGB-lower-opacity: rgba(0,0,0,0.015);
+    --DTBlack_RGB-lowest-opacity: rgba(0,0,0,0.035);
+    --DTBlack_RGB-less-opacity: rgba(0,0,0,0.05);
+    --DTBlack_RGB-lesser-opacity: rgba(0,0,0,0.06);
+    --DTBlack_RGB-lessest-opacity: rgba(0,0,0,0.08);
+    --DTBlack_RGB-half-opacity: rgba(0,0,0,0.5);
+    --DTBlack_RGB-low-two-five-opacity: rgba(0,0,0,0.25);
+    --DTBlack_RGB-lower-two-opacity: rgba(0,0,0,0.02);
+    --DTBlack_RGB-low-two-opacity: rgba(0,0,0,0.2);
+    --DTBlack_RGB-low-seven-five-opacity: rgba(0,0,0,0.75);
+    --DTBlack_RGB-lower-seven-five-opacity: rgba(0,0,0,0.075);
+    --DTBlack_RGB-low-seven-opacity: rgba(0,0,0,0.7);
+    --DTBlack_RGB-low-eight-opacity: rgba(0,0,0,0.8);
+    --DTBlack_RGB-low-nine-opacity: rgba(0,0,0,0.9);
+    --DTBlack_RGB-low-one-five-opacity: rgba(0,0,0,0.15);
+    --DTBlack_RGB-low-six-opacity: rgba(0,0,0,0.6);
+    --DTBlack_RGB-low-four-opacity: rgba(0,0,0,0.4);
+    --DTWhite_RGB: 255, 255, 255;
+    --DTWhite_RGB-low-one-five-opacity: rgba(255,255,255,0.15);
+    --DTWhite_RGB-low-three-opacity: rgba(255,255,255,0.3);
+    --DTWhite_RGB-low-eight-opacity: rgba(255,255,255,0.8);
+        
+    --DTBorderColor: #e5e5e5;
+    --DTBlackColor: #000; 
+    --DTWhiteColor: #fff;
+
+    /* Skin Color */
+    --DTPrimaryColor: #f29727;
+    --DTSecondaryColor: #10221b;
+    --DTTertiaryColor: #e6eee5;
+    --DTQuaternaryColor: #1dc5ce;
+    
+    /* Font Family Typo Variables */
+    --DTFontTypo_Base: "Jost", sans-serif; /* for Body */
+    --DTFontTypo_Alt: "Palanquin Dark", sans-serif; /* for Headings */
+    --DTFontTypo_Ext: "Mansalva", cursive; /* for Extra or Extended fonts */
+    
+    /* Font Size Typo Variables */
+    --DTFontSize_Base: 20px; 
+    --DTFontSize_H1: 60px;
+    --DTFontSize_H2: 50px;
+    --DTFontSize_H3: 40px;
+    --DTFontSize_H4: 36px;
+    --DTFontSize_H5: 26px;
+    --DTFontSize_H6: 24px;
+
+    /* Line-height Typo Variables */
+    --DTFontWeight_Base: 300;    
+    --DTFontWeight_regular: 400;
+    --DTFontWeight_Ext: 500;
+    --DTFontWeight_Alt: 500;
+
+    /* Line-height Typo Variables */
+    --DTLineHeight_Base: 1.6;
+    --DTLineHeight_Alt: 1.25;
+    --DTLineHeight_Ext: 1.1;
+    
+
+    /* Radius Variables */
+    --DTRadius_Zero: 0;
+    --DTRadius_Part: 2em;
+    --DTRadius_Full: 50%;
+
+    --DTRadius_1X: 3px;
+    --DTRadius_2X: 5px;
+    --DTRadius_3X: 10px;
+
+    
+    /* Padding Variables */
+    --DTInputPadding: 10px 0;
+    --DTSelectPadding: 12px;
+    --DTPadding_Btn: 15px 30px;
+    --DTPadding_MiniBtn: 12px 20px;
+    --DTPadding_MaxiBtn: 16px 35px;
+
+
+    --DTBaseTransition: all 0.3s linear 0s;
+    --DTAltTransition: all 0.35s ease-in-out 0s;
+
+}
+
+/* Typography - Defaults */
+
+    /* Base */
+    body, button, input, textarea, select, optgroup { font-family: var(--DTFontTypo_Base); font-size: var(--DTFontSize_Base); font-weight: var(--DTFontWeight_Base); letter-spacing: 0; line-height: var(--DTLineHeight_Base); text-transform: none; }
+
+    input[type="submit"], input[type="reset"], input[type="button"], button[type="button"], [role="button"], button, .button, a.button, .dt-sc-button, .elementor-button.dt-elementor-button, .yith-wcwl-add-to-wishlist a, .yith-wcqv-button, .dt-wcsg-button { line-height: 1em; }
+
+
+    /* Headings */
+    h1 { font-size: var(--DTFontSize_H1); }
+    h2 { font-size: var(--DTFontSize_H2); }
+    h3 { font-size: var(--DTFontSize_H3); }
+    h4 { font-size: var(--DTFontSize_H4); }
+    h5 { font-size: var(--DTFontSize_H5); }
+    h6 { font-size: var(--DTFontSize_H6); }
+
+    h1, h2, h3, h4, h5, h6 { font-family: var(--DTFontTypo_Alt); font-weight: var(--DTFontWeight_Alt); letter-spacing: 0; line-height: var(--DTLineHeight_Alt); text-transform: none; }
+
+
+    /* Menu */
+    .dt-header-menu li a { font-family: var(--DTFontTypo_Base); font-weight: var(--DTFontWeight_regular); }
+    .dt-header-menu ul li ul li>a { font-size: var(--DTFontSize_Base); font-weight: var(--DTFontWeight_regular); }
+    
+
+    /* Breadcrumb */
+    .main-title-section h1 { font-family: var(--DTFontTypo_Alt); }
+    .breadcrumb { font-family: var(--DTFontTypo_Base); }
+    .main-title-section-wrapper>.main-title-section-bg:after { background-color: rgba(var(--DTBlack_RGB), 0.3); }
+
+
+    /* Footer */
+    div.footer-widgets .widgettitle, #footer .widgettitle { font-family: var(--DTFontTypo_Alt); }
+    #footer, .footer-copyright, div.footer-widgets .widget { font-family: var(--DTFontTypo_Base); }
+
+
+
+/* Base Colors - Defaults */
+    
+    body, .layout-boxed .inner-wrapper { background-color: var(--DTBodyBGColor); }
+
+    
+    /* Base */
+    body { color: var(--DTBodyTxtColor); }
+
+    
+    /* Links */
+    a { color: var(--DTLinkColor); }
+    a:hover { color: var(--DTLinkHoverColor); }
+    /* a:hover { color: rgba(var(--DTLinkHoverColor), 0.5); } */
+
+
+    /* Headings */
+    h1, h2, h3, h4, h5, h6 { color: var(--DTHeadAltColor); }
+
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
+    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: var(--DTLinkHoverColor); }
+
+
+    /* Menu */
+    .no-header-menu ul li a, .dt-header-menu .dt-primary-nav li a { color: var(--DTWhiteColor); }
+
+
+    /* Footer */
+    div.footer-widgets .widgettitle, #footer .widgettitle { color: var(--DTWhiteColor); }
+
+    #footer, .footer-copyright, div.footer-widgets .widget { color: var(--DTBodyTxtColor); }
+
+    .footer-widgets a:not(.button):not(.elementor-button), #footer a:not(.button):not(.elementor-button) {color: var(--DTLinkColor);}
+
+    .footer-widgets a:not(.button):not(.elementor-button):hover, #footer a:not(.button):not(.elementor-button):hover { color: var(--DTLinkHoverColor); }
+
+    .dt-no-footer-builder-content.footer-copyright, .footer-copyright { background-color: var(--DTTertiaryColor); }
+    .dt-no-footer-builder-content.footer-copyright a, .footer-copyright a, .dt-no-footer-builder-content.footer-copyright p, .footer-copyright p { font-size: calc(var(--DTFontSize_Base) - 2px); }
+
+    #footer .dt-sc-dark-bg a, #footer .dt-sc-dark-bg .footer-widgets a:not(.button):not(.elementor-button), #footer .dt-sc-dark-bg a:not(.button):not(.elementor-button) { color: var(--DTWhiteColor); }
+    #footer .dt-sc-dark-bg a:hover, #footer .dt-sc-dark-bg .footer-widgets a:not(.button):not(.elementor-button):hover, #footer .dt-sc-dark-bg a:not(.button):not(.elementor-button):hover { color: var(--DTLinkHoverColor); }
+
+    @media only screen and (max-width: 767px) {
+
+        /* Headings */
+        h1 { font-size: calc(var(--DTFontSize_H1) - 25px); }
+        h2 { font-size: calc(var(--DTFontSize_H2) - 20px); }
+        h3 { font-size: calc(var(--DTFontSize_H3) - 15px); }
+        h4 { font-size: calc(var(--DTFontSize_H4) - 10px); }
+        h5 { font-size: calc(var(--DTFontSize_H5) - 5px); }
+    }

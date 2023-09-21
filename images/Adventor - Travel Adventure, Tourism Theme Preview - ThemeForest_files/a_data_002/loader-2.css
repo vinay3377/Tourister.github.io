@@ -1,0 +1,105 @@
+/*--------------------------------------------------------------
+    Loader
+--------------------------------------------------------------*/
+
+.pre-loader {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999991;
+    background-color: var(--DTBodyBGColor); 
+}
+
+.loader-inner {
+  text-transform:uppercase;
+  
+  width:150px;
+  text-align:center;
+  line-height:50px;
+  
+  margin:auto;
+  position:absolute;
+  left:0;right:0;top:50%;
+  transform:translateY(-50%);
+}
+
+.loader-inner .loader-text {
+    color: var(--DTHeadAltColor);
+    font-family: var(--DTFontTypo_Alt);
+    font-size: var(--DTFontSize_H6);
+    font-weight: bold;
+    padding: 5px 15px;
+    position:relative;
+    z-index:0;  
+}
+.loader-inner .loader-text:before {
+  content:'';
+  background: #f4f4f4;
+  display:block;
+  margin: 0 -15px;
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  z-index: -2;
+  
+  animation:2s loadingBefore infinite ease-in-out;
+}
+
+@keyframes loadingBefore {
+  0%   {transform:translateX(-15px);}
+  50%  {transform:translateX(15px);}
+  100% {transform:translateX(-15px);}
+}
+
+
+.loader-inner .loader-text:after {
+  content:'';
+  width:14px;
+  height:60px;
+  display:block;
+  margin:auto;
+  opacity:0.75;
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  z-index: -1;
+  
+  animation:2s loadingAfter infinite ease-in-out;
+}
+
+@keyframes loadingAfter {
+  0%   {transform:translateX(-50px);}
+  50%  {transform:translateX(50px);}
+  100% {transform:translateX(-50px);}
+}
+
+
+/*--------------------------------------------------------------
+    Accents
+--------------------------------------------------------------*/
+
+    .loader-inner .loader-text:after { background-color: var(--DTPrimaryColor); }
+
+
+/*--------------------------------------------------------------
+    Responsive
+--------------------------------------------------------------*/
+
+/*----*****---- << Mobile (Landscape) >> ----*****----*/
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .loader-inner:before {
+        font-size: 5em;
+    }
+}
+
+
+/* Common Styles for the devices below 479px width */
+
+@media only screen and (max-width: 479px) {
+    .loader-inner::before {
+        font-size: 4em;
+    }
+}
